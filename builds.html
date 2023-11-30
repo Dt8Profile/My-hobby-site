@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
     <title>skyrim</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="main-text bg-stone-600">
     <nav class="bg-stone-900">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
             <div class="relative flex h-16 items-center justify-between">
@@ -40,6 +45,9 @@
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                             <a href="about.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                            <div class=" flex justify-center">
+                                <img class="h-10" src="skyrim.png" alt="">
+                            </div>
                             <a href="builds.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Builds</a>
                             <a href="images.html"
@@ -52,8 +60,8 @@
     </nav>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
+    <div class="sm:hidden" id="mobile-menu ">
+        <div class="space-y-1 px-2 pb-3 pt-2 text-center">
 
             <a href="index.html"
                 class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>

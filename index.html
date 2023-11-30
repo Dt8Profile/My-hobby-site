@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="main-text">
+<body class="main-text main-text bg-stone-600">
     <nav class="bg-stone-900">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
             <div class="relative flex h-16 items-center justify-between">
@@ -45,6 +45,9 @@
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                             <a href="about.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                            <div class=" flex justify-center">
+                                <img class="h-10" src="skyrim.png" alt="">
+                            </div>
                             <a href="builds.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Builds</a>
                             <a href="images.html"
@@ -58,7 +61,7 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
+        <div class="space-y-1 px-2 pb-3 pt-2 text-center ">
 
             <a href="index.html"
                 class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
@@ -83,7 +86,7 @@
                     <br>
                     <button
                         class="bg-stone-500 hover:bg-stone-700 text-white font-bold py-2 px-4 border border-stone-700 rounded">
-                        About
+                        <a href="about.html">About</a>
                     </button>
 
                 </div>
