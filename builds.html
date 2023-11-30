@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <title>skyrim</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="main-text bg-stone-600">
+    <nav class="bg-stone-900">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="index.html"
+                                class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                            <a href="about.html"
+                                class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                            <div class=" flex justify-center">
+                                <img class="h-10" src="images/skyrim.png" alt="">
+                            </div>
+                            <a href="builds.html"
+                                class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Builds</a>
+                            <a href="images.html"
+                                class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Images</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2 text-center">
+
+            <a href="index.html"
+                class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
+            <a href="about.html"
+                class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+            <a href="builds.html"
+                class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Builds</a>
+            <a href="images.html"
+                class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Images</a>
+        </div>
+    </div>
+    <div class="container mx-auto overflow-x-auto text-center py-4 ">
+        <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-zinc-700 text-white">
+                <tr>
+                    <th class="py-2 px-4">Image</th>
+                    <th class="py-2 px-4">Race</th>
+                    <th class="py-2 px-4">Effects</th>
+                    <th class="py-2 px-4">Power</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="py-2 px-4"><img src="images/skyrim-argonian" alt="Image 1"
+                            class="h-10 object-cover rounded-full mx-auto"></td>
+                    <td class="py-2 px-4">Argonian</td>
+                    <td class="py-2 px-4">Waterbreathing and 50% Disease Resistance</td>
+                    <td class="py-2 px-4">Histskin: Regenerate health 10x faster for 60 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/khhajiit.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Khhajitt</td>
+                    <td class="py-2 px-4">+15 Base Unarmed Damage</td>
+                    <td class="py-2 px-4">Night Eye: Night vision for 60 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/redguard.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Redguard</td>
+                    <td class="py-2 px-4">50% Poison Resistance</td>
+                    <td class="py-2 px-4">Adrenaline Rush: Regenerate stamina 10x faster for 60 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/nord.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Nord</td>
+                    <td class="py-2 px-4">50% Frost Resistance</td>
+                    <td class="py-2 px-4">Battle Cry: Nearby enemies are Frightened for 30 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/breton.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Breton</td>
+                    <td class="py-2 px-4">25% Magic Resistance</td>
+                    <td class="py-2 px-4">Dragonskin: Absorb 50% of magicka from all incoming spells for 60 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/imperial.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Imperial</td>
+                    <td class="py-2 px-4">Find more Gold than usual</td>
+                    <td class="py-2 px-4">Voice of the Emperor: Nearby people are Calmed for 30 seconds</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/orcs.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Orsimer</td>
+                    <td class="py-2 px-4">Can enter Orc Strongholds without becoming Blood-Kin</td>
+                    <td class="py-2 px-4">Berserker Rage: Take half damage and do double physical damage for 60 seconds
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/Bosmer.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Bosmer</td>
+                    <td class="py-2 px-4">50% Disease & Poison Resistance</td>
+                    <td class="py-2 px-4">Command Animal: Make an animal an ally for 60 seconds
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/altmer.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Altmer</td>
+                    <td class="py-2 px-4">+50 Magicka</td>
+                    <td class="py-2 px-4">Highborn: Regenerate 25% of your maximum magicka per second for 60 seconds
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4"><img src="images/dummer.jpg" alt="Image 2"
+                            class="h-10 object-cover rounded-full mx-auto">
+                    </td>
+                    <td class="py-2 px-4">Dummer</td>
+                    <td class="py-2 px-4">50% Fire Resistance</td>
+                    <td class="py-2 px-4">Ancestor's Wrath: Surrounds you in fire for 60 seconds
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
