@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="main-text">
+<body class="main-text main-text bg-stone-600">
     <nav class="bg-stone-900">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
             <div class="relative flex h-16 items-center justify-between">
@@ -45,6 +45,9 @@
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                             <a href="about.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                            <div class=" flex justify-center">
+                                <img class="h-10" src="skyrim.png" alt="">
+                            </div>
                             <a href="builds.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Builds</a>
                             <a href="images.html"
@@ -58,7 +61,7 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
+        <div class="space-y-1 px-2 pb-3 pt-2 text-center ">
 
             <a href="index.html"
                 class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
@@ -73,17 +76,17 @@
     <main>
         <div class="h-screen bg-cover bg-center relative bg-[url('skyrim-image.jpg')]">
             <!-- Dark overlay -->
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-black opacity-25"></div>
 
             <!-- Centered content -->
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center text-white">
                     <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Welcome to Skyrim</h1>
-                    <p class="text-lg md:text-xl lg:text-2xl">Choose Your Path Here.</p>
+                    <p class="text-lg md:text-xl lg:text-2xl">Learn More Here</p>
                     <br>
                     <button
                         class="bg-stone-500 hover:bg-stone-700 text-white font-bold py-2 px-4 border border-stone-700 rounded">
-                        About
+                        <a href="about.html">About</a>
                     </button>
 
                 </div>
