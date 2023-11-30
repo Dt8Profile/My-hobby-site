@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
     <title>skyrim</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="main-text">
     <nav class="bg-stone-900">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
             <div class="relative flex h-16 items-center justify-between">
@@ -65,7 +70,27 @@
                 class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Images</a>
         </div>
     </div>
+    <main>
+        <div class="h-screen bg-cover bg-center relative bg-[url('skyrim-image.jpg')]">
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 bg-black opacity-50"></div>
 
+            <!-- Centered content -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Welcome to Skyrim</h1>
+                    <p class="text-lg md:text-xl lg:text-2xl">Choose Your Path Here.</p>
+                    <br>
+                    <button
+                        class="bg-stone-500 hover:bg-stone-700 text-white font-bold py-2 px-4 border border-stone-700 rounded">
+                        About
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
     <script>
         function toggleMobileMenu() {
             var mobileMenu = document.getElementById('mobile-menu');
