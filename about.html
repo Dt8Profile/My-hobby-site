@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
     <title>skyrim</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="main-text">
+<body class="main-text bg-stone-600">
     <nav class="bg-stone-900">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-white flex justify-center">
             <div class="relative flex h-16 items-center justify-between">
@@ -40,6 +45,9 @@
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                             <a href="about.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                            <div class=" flex justify-center">
+                                <img class="h-10" src="skyrim.png" alt="">
+                            </div>
                             <a href="builds.html"
                                 class="text-white-800 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Builds</a>
                             <a href="images.html"
@@ -65,13 +73,54 @@
                 class="text-white-300 hover:bg-stone-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Images</a>
         </div>
     </div>
+    <div>
 
-    <script>
-        function toggleMobileMenu() {
-            var mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        }
-    </script>
+    </div>
+    <div class="container mx-auto my-8 p-8 bg-yellow-100 shadow-md rounded-md text-center">
+
+        <h1 class="font-bold mb-4 text-stone-700 text-lg">About Skyrim</h1>
+
+        <p class="text-gray-700 leading-relaxed">
+            Skyrim, also known as The Elder Scrolls V: Skyrim, is an action role-playing video game developed by
+            Bethesda Game Studios. It is the fifth installment in The Elder Scrolls series and is set in the
+            fictional
+            province of Skyrim. Released in 2011, Skyrim has gained immense popularity for its open-world
+            exploration,
+            rich lore, and captivating gameplay.
+        </p>
+        <div>
+            <div class=" flex justify-center">
+                <img class="h-10" src="skyrim.svg" alt="">
+            </div>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Players assume the role of the Dragonborn, a prophesied hero with the power to combat dragons and save
+                the
+                world from destruction. The game offers a vast and detailed open world, filled with cities, dungeons,
+                and
+                various landscapes to explore. Skyrim's modding community has further expanded its longevity, allowing
+                players to customize and enhance their gaming experience.
+            </p>
+
+            <div class=" flex justify-center">
+                <img class="h-10" src="skyrim.svg" alt="">
+            </div>
+
+            <p class="text-gray-700 leading-relaxed mt-4">
+                With its stunning visuals, epic quests, and a dynamic environment, Skyrim continues to be a beloved
+                title in
+                the gaming community. Immerse yourself in a world of dragons, magic, and adventure as you navigate
+                through
+                the rugged terrain of Skyrim.
+            </p>
+
+        </div>
+
+        <script>
+            function toggleMobileMenu() {
+                var mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            }
+        </script>
 </body>
 
-</html>
+</html
